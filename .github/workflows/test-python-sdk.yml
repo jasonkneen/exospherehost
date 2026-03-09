@@ -58,4 +58,4 @@ jobs:
         with:
           name: python-sdk-test-results
           path: python-sdk/pytest-report.xml
-          retention-days: 30
+          retention-days: 1
