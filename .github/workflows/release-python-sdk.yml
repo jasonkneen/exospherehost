@@ -65,7 +65,7 @@ jobs:
         with:
           name: python-sdk-test-results
           path: python-sdk/pytest-report.xml
-          retention-days: 30
+          retention-days: 1
 
   publish:
     runs-on: ubuntu-latest
@@ -214,7 +214,7 @@ jobs:
             python-sdk/requirements.txt
             python-sdk/vulnerability-report.json
             python-sdk/sbom-summary.md
-          retention-days: 90
+          retention-days: 1
 
       - name: Add SBOM to release assets
         uses: softprops/action-gh-release@v2
